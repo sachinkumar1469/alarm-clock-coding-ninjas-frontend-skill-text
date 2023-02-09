@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alarm App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+    <!-- Display Current Time -->
+    <div id="clock">
+      <p id="time"></p>
+    </div>
+
+    <!-- Alarm Input Form -->
+    <div id="alarm-form">
+      <p>Set Alarm</p>
+      <div class="form">         
+            <input type="number" id="hr" min="1" max="12" placeholder="Hour" required>         
+            <input type="number" id="min" min="0" max="59" placeholder="Minute" required>        
+            <input type="number" id="sec" min="0" max="59" placeholder="Second" required>       
+            <select id="ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <button id="set-alarm-button">Set Alarm</button>
+        </div>
+    </div>
+
+    <!-- To display the alarm -->
+    <div id="alarm-list">
+      <ul id="alarms">
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
